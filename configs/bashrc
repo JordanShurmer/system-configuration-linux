@@ -2,3 +2,6 @@ source ~/.local/share/omakub/defaults/bash/rc
 
 # Editor used by CLI
 export EDITOR="nvim"
+
+# resize LINES and COLUMNS as needed
+shopt -s checkwinsize

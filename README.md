@@ -11,3 +11,23 @@ Please help us improve Omakub's documentation on the [the basecamp/omakub-site r
 ## License
 
 Omakub is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Differences
+
+How does this differ compares to Omakub?
+
+* removed apps
+  * 1password
+  * vscode
+  * signal
+  * all the "web apps"
+  * mise
+* additional .bashrc settings in configs/bashrc
+* various changes to aliases in defaults/bash/aliases
+* [TODO] change the prompt
+* remove all the ruby things
+* increase font size
+* default theme to kanagawa 
+* tweak bin/omakub-font to support non-nerd font and add [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/)
+  * note: you have to install the Berkley font manually
+* [TODO] Prompt user for where to get neovim config from

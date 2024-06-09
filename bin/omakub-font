@@ -1,18 +1,19 @@
 # Pick a preconfigured theme
-FONT=$(gum choose "Cascadia Mono" "Fira Mono" "JetBrains Mono" "Meslo" --header "Choose your programming font:" --height 6 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
+FONT=$(gum choose "Berkeley Mono" "Cascadia Mono" "Fira Mono" "JetBrains Mono" "Meslo" --header "Choose your programming font:" --height 6 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 [ ! -n "$FONT" ] && exit 0
 
 if [ "$FONT" == "cascadia-mono" ]; then
-	NERD_FONT="CaskaydiaMono Nerd Font"
+	THE_FONT="CaskaydiaMono Nerd Font 10"
 elif [ "$FONT" == "fira-mono" ]; then
-	NERD_FONT="FiraMono Nerd Font"
+	THE_FONT="FiraMono Nerd Font 10"
 elif [ "$FONT" == "jetbrains-mono" ]; then
-	NERD_FONT="JetBrainsMono NFM"
+	THE_FONT="JetBrainsMono NFM 10"
 elif [ "$FONT" == "meslo" ]; then
-	NERD_FONT="MesloLGLDZ Nerd Font"
+	THE_FONT="MesloLGLDZ Nerd Font 10"
+elif [ "$FONT" == "berkeley-mono" ]; then
+    THE_FONT="Berkeley Mono"
 fi
 
-gsettings set org.gnome.desktop.interface monospace-font-name "$NERD_FONT 10"
+gsettings set org.gnome.desktop.interface monospace-font-name "$THE_FONT"
 cp $OMAKUB_PATH/fonts/alacritty/$FONT.toml ~/.config/alacritty/font.toml
-sed -i "s/\"editor.fontFamily\": \".*\"/\"editor.fontFamily\": \"$NERD_FONT\"/g" ~/.config/Code/User/settings.json
