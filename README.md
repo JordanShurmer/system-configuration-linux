@@ -16,6 +16,10 @@ Omakub is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 How does this differ compares to Omakub?
 
+
+* additional apps
+  * volta
+  * discord
 * removed apps
   * 1password
   * vscode

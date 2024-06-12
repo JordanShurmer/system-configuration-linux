@@ -3,5 +3,5 @@ color_prompt=yes
 
 # TODO: More prompt stuff
 
-ps1=$'::: '
-ps1="\[\e]0;\w\a\]$ps1"
+PS1=$'::: '
+PS1="\[\e]0;\w\a\]$PS1"
