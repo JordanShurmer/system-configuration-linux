@@ -14,6 +14,10 @@ alias ....='cd ../../..'
 alias n='nvim'
 alias g='git'
 alias cat='bat'
+alias d='zoxide'
+
+# Zellij / sessions
+alias zri='zellij run --in-place --'
 
 # Git
 alias gcm='git commit -m'
