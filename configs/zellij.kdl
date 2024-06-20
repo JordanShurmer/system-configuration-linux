@@ -1,2 +1,8 @@
 theme "tokyo-night"
 default_layout "compact"
+keybinds {
+    unbind "Ctrl h" //so vim can use it
+    shared_except "move" "locked" {
+        bind "Ctrl m" { SwitchToMode "Move"; }
+    }
+}

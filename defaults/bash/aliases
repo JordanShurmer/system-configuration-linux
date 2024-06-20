@@ -13,8 +13,11 @@ alias ....='cd ../../..'
 # Tools
 alias n='nvim'
 alias g='git'
-alias cat='bat'
+alias cat='batcat'
+alias bat='batcat'
 alias d='zoxide'
+alias ask='mods'
+alias help='mods --role code'
 
 # Zellij / sessions
 alias zri='zellij run --in-place --'
